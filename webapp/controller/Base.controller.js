@@ -28,7 +28,6 @@ sap.ui.define([
                 this.getRouter().navTo("masterlist", {}, bReplace);
             }
         }
-        //hola
     });
 });
 

@@ -1,11 +1,13 @@
 sap.ui.define([
     // "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController",
-    "sap/ui/core/mvc/Controller"
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/Device"
+
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller) {
+    function (Controller, Device) {
         "use strict";
 
         return Controller.extend("student00.com.sap.training.ux402.listdetail.ux402listdetail.controller.List", {
