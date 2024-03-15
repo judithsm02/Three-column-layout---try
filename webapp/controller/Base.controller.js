@@ -20,10 +20,10 @@ sap.ui.define([
         onNavBack: function() { 
             var sPreviousHash = History.getInstance().getPreviousHash();
             if (sPreviousHash !== undefined) {
-                // The history contains a previous entry
+                // historial antic
                 history.go(-1);
             } else {
-                // Otherwise we go backwards with a forward history
+                // tornes a l'última pàgina
                 var bReplace = true;
                 this.getRouter().navTo("masterlist", {}, bReplace);
             }

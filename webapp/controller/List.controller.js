@@ -1,5 +1,5 @@
 sap.ui.define([
-    // "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController",
+    // "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController", //si ho poso no em mostra res per pantalla
     "sap/ui/core/mvc/Controller",
     "sap/ui/Device"
 
@@ -22,17 +22,22 @@ sap.ui.define([
                                                                                                 
 					}.bind(this)  
 				});					
-			   // this.getRouter().getRoute("masterlist").attachPatternMatched(this._onListMatched, this); //s'obte una referencia a la ruta "masterlist"
+			   //this.getRouter().getRoute("masterlist").attachPatternMatched(this._onListMatched, this); 
+                                                                                //s'obte una referencia a la ruta "masterlist"
                                                                                 //attachPatternMatched: adjunta un manejador de eventos al patternMatched
                                                                                 //patternMatched se dispara cuando la URL coincide con el patrón definido en la ruta.
                                                                                 //this._onListMatched se ejecutará cuando se cumpla la condición de coincidencia del patrón.
 
-			    //this.getRouter().attachBypassed(this.onBypassed, this);  //
+			   // this.getRouter().attachBypassed(this.onBypassed, this);  //
             },
+
+            
 
             _navigateToCarrierDetails: function(sCarrierId , bReplace){
 
-                this.getRouter().NavTo("carrierdetails",{objectId: sCarrierId}, bReplace);  
+                this.getRouter().navTo("carrierdetails", {
+                    objectId: sCarrierId
+				}, bReplace);  
 
                 //la funció pasa dos parametres on sCarrierId es un valor i el bReplace es un boolean que indica 
                 //si la navegació de la ruta actual s'ha de reemplaçar en el historial del navegador actual
