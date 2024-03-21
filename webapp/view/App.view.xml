@@ -7,7 +7,7 @@
         <f:FlexibleColumnLayout
 			id="layout"
 			layout="{mainView>/layout}"
-			backgroundDesign="Translucent">
+			backgroundDesign="tr">
 		</f:FlexibleColumnLayout>
     </App>
 </mvc:View>

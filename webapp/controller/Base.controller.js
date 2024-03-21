@@ -1,6 +1,7 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/routing/History"
+    "sap/ui/core/routing/History",
+    "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/ListController"
 ], function (Controller, History) {
     "use strict";
 

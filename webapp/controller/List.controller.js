@@ -1,5 +1,5 @@
 sap.ui.define([
-    // "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController", //si ho poso no em mostra res per pantalla
+    //"student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController", //si ho poso no em mostra res per pantalla
     "sap/ui/core/mvc/Controller",
     "sap/ui/Device"
 
@@ -35,7 +35,7 @@ sap.ui.define([
 
             _navigateToCarrierDetails: function(sCarrierId , bReplace){
 
-                this.getRouter().navTo("carrierdetails", {
+                this.getRouter().navTo("carrierdetails",{
                     objectId: sCarrierId
 				}, bReplace);  
 
