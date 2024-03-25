@@ -1,6 +1,6 @@
 sap.ui.define(     // es defineixen els moduls ( arxiu en java que té una funcionalitat especifica) 
   [
-    //"./BaseController",      //les dependencies son altres moduls que s'han d'executat abans d'aquest modul "app"
+    "./BaseController",      //les dependencies son altres moduls que s'han d'executat abans d'aquest modul "app"
     "sap/ui/model/json/JSONModel"
 
   ],

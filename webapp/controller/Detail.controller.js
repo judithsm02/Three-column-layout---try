@@ -48,10 +48,10 @@ sap.ui.define([
 
 
         _onObjectMatched: function(oEvent){
-            this.getView().getModel("mainView").setProperty("/layout", "TwoColumnsMidExpanded");
-            var sObjectPath =
-            "/UX_C_Carrier_TP('" + oEvent.getParameter("arguments").objectId + "')";
-            this._bindView(sObjectPath);
+              this.getView().getModel("mainView").setProperty("/layout", "TwoColumnsMidExpanded");
+              var sObjectPath =
+              "/UX_C_Carrier_TP('" + oEvent.getParameter("arguments").objectId + "')";
+              this._bindView(sObjectPath);
           }
 
       });

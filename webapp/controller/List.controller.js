@@ -1,8 +1,6 @@
 sap.ui.define([
-    //"student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController", //si ho poso no em mostra res per pantalla
-    "sap/ui/core/mvc/Controller",
+    "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/BaseController",
     "sap/ui/Device"
-
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller

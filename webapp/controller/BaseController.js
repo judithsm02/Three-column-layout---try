@@ -1,7 +1,6 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/ui/core/routing/History",
-    "student00/com/sap/training/ux402/listdetail/ux402listdetail/controller/ListController"
+    "sap/ui/core/routing/History"
 ], function (Controller, History) {
     "use strict";
 
@@ -18,18 +17,16 @@ sap.ui.define([
             return this.getOwnerComponent().getModel("i18n").getResourceBundle();
         },
 
-        onNavBack: function() { 
+        onNavBack: function() {
             var sPreviousHash = History.getInstance().getPreviousHash();
             if (sPreviousHash !== undefined) {
-                // historial antic
+                // The history contains a previous entry
                 history.go(-1);
             } else {
-                // tornes a l'última pàgina
+                // Otherwise we go backwards with a forward history
                 var bReplace = true;
                 this.getRouter().navTo("masterlist", {}, bReplace);
             }
         }
     });
 });
-
-
